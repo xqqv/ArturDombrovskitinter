@@ -8,6 +8,10 @@ def tehtudvalik():
     else:
         texbox.configure(show="")
         f=True
+def textpealkirjesse():
+    t=texbox.get()
+    pealkiri.configure(text=t)
+    texbox.delete(0,END)
 aken=Tk()
 aken.geometry("400x500")
 aken.title("akna pealkiri")
